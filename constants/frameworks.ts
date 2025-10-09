@@ -11,18 +11,18 @@ export const frameworksData: Framework[] = [
       en: ['Action', 'Purpose', 'Expectation'],
     },
     description: {
-      zh: '明確指定AI需要執行的具體動作、說明任務目的與背景脈絡，並定義預期的輸出格式、長度和品質標準。',
-      en: 'Clearly specify the concrete action for the AI to perform, explain the purpose and context of the task, and define the expected output format, length, and quality standards.',
+      zh: 'APE將「做什麼」與「為什麼做」聯繫起來，這會產生巨大的差異。當AI理解你潛在的目的時，結果會更符合你的實際需求。',
+      en: 'APE connects the what with the why, and this makes a huge difference. When the AI understands your underlying purpose, the results align much better with what you actually need.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `Action: 撰寫一篇產品介紹文章
-Purpose: 為新推出的智慧手錶建立品牌認知和購買興趣
-Expectation: 500字，包含3個核心功能特色，語調專業且吸引人`,
-        en: `Action: Write a product introduction article
-Purpose: To build brand awareness and purchase interest for a newly launched smartwatch
-Expectation: 500 words, including 3 core features, with a professional and engaging tone`,
+        zh: `行動: 生成五個部落格文章標題。
+目的: 目的是為與「初學者可持續園藝」相關的關鍵詞吸引自然搜尋流量，並鼓勵我們的目標受眾（新手園丁）點擊。
+期望: 標題應引人入勝、對SEO友好、長度在70個字符以下，並以編號列表形式呈現。它們應該能引發好奇心並承諾提供實用建議。`,
+        en: `Action: Generate five blog post titles.
+Purpose: The purpose is to attract organic search traffic for keywords related to 'sustainable gardening for beginners' and encourage clicks from our target audience of novice gardeners.
+Expectation: The titles should be engaging, SEO-friendly, under 70 characters, and presented as a numbered list. They should spark curiosity and promise practical advice.`,
       },
     },
   },
@@ -35,18 +35,18 @@ Expectation: 500 words, including 3 core features, with a professional and engag
       en: ['Task', 'Action', 'Goal'],
     },
     description: {
-      zh: '清楚定義要完成的工作、指定執行步驟或方法，並明確最終要達成的結果。',
-      en: 'Clearly define the work to be completed, specify the steps or methods for execution, and state the final result to be achieved.',
+      zh: '當你趕時間時，TAG框架是你的首選。它非常簡單，但每次都能完成任務。沒有廢話，只有結果。',
+      en: 'TAG is the framework to reach for when you’re in a hurry. It’s beautifully simple but gets the job done every time. No fluff, just results.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `Task: 分析競爭對手的社群媒體策略
-Action: 比較前三大競爭者的發文頻率、內容類型和互動率
-Goal: 提供我們社群策略優化的具體建議`,
-        en: `Task: Analyze competitors' social media strategies
-Action: Compare the posting frequency, content types, and engagement rates of the top three competitors
-Goal: Provide concrete recommendations for optimizing our social media strategy`,
+        zh: `任務: 總結提供的關於再生能源趨勢的文章。
+行動: 專注於提取討論的關鍵技術進步及其潛在市場影響。
+目標: 摘要應為忙碌的主管提供快速概覽，使其無需閱讀整篇文章即可了解最關鍵的要點，從而能夠就潛在投資做出明智的決定。`,
+        en: `Task: Summarize the provided article on renewable energy trends.
+Action: Focus on extracting the key technological advancements discussed and their potential market impact.
+Goal: The summary should provide a quick overview for a busy executive to understand the most critical takeaways without reading the entire article, enabling them to make informed decisions about potential investments.`,
       },
     },
   },
@@ -107,20 +107,20 @@ Method: Identify the error in the code and provide a corrected version with an e
       en: ['Role', 'Action', 'Context', 'Expectation'],
     },
     description: {
-      zh: '指定AI扮演的專業角色、描述需要執行的具體任務、提供相關背景資訊和限制條件，並定義輸出的格式和品質要求。',
-      en: 'Assign a professional role to the AI, describe the specific task to be performed, provide relevant background information and constraints, and define the output format and quality requirements.',
+      zh: '當你需要需要特定專業知識的回應時，RACE是你的首選。它就像為AI分配一個角色——突然間，它不僅是一個AI，而是一位財務顧問、行銷專家，或任何你需要的專家。',
+      en: 'RACE is a go-to when you need responses requiring specific expertise. It’s like casting the AI in a role — suddenly it’s not just an AI, but a financial advisor, marketing expert, or whatever specialist you need.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `Role: 資深數位行銷顧問
-Action: 制定Q4季度的社群媒體行銷計畫
-Context: 目標客群是25-40歲上班族，預算50萬台幣，主打環保理念
-Expectation: 包含平台選擇、內容策略、預算分配的完整企劃書`,
-        en: `Role: Senior Digital Marketing Consultant
-Action: Develop a social media marketing plan for the Q4 quarter
-Context: The target audience is 25-40 year old office workers, with a budget of 500,000 TWD, focusing on an eco-friendly concept
-Expectation: A complete proposal including platform selection, content strategy, and budget allocation`,
+        zh: `角色: 你是一位經驗豐富的財務顧問，專為年輕專業人士提供退休規劃。
+行動: 創建一份可行的步驟清單。
+情境: 目標受眾是20多歲末和30多歲初的年輕人，他們剛開始職業生涯，希望了解儲蓄退休金的基礎知識。他們有學貸債務，不確定如何在償還債務和長期儲蓄之間取得平衡。
+期望: 清單應包含5-7個清晰簡潔的步驟，並為每個步驟提供簡要解釋。語氣應鼓勵人心且易於理解，避免使用複雜的金融術語。輸出應為編號列表格式。`,
+        en: `Role: You are an experienced financial advisor with expertise in retirement planning for young professionals.
+Action: Create a list of actionable steps.
+Context: The target audience is individuals in their late 20s and early 30s who have just started their careers and are looking to understand the basics of saving for retirement. They have student loan debt and are unsure how to balance debt repayment with long-term savings.
+Expectation: The list should include 5-7 clear, concise steps, with a brief explanation for each. The tone should be encouraging and easy to understand, avoiding complex financial jargon. The output should be in a numbered list format.`,
       },
     },
   },
@@ -129,24 +129,24 @@ Expectation: A complete proposal including platform selection, content strategy,
     name: { zh: 'CARE 框架', en: 'CARE Framework' },
     category: { zh: '基礎結構框架', en: 'Basic Structure Frameworks' },
     components: {
-      zh: ['Context (情境)', 'Audience (受眾)', 'Requirements (要求)', 'Expectations (期望)'],
-      en: ['Context', 'Audience', 'Requirements', 'Expectations'],
+      zh: ['Context (情境)', 'Action (行動)', 'Result (結果)', 'Example (範例)'],
+      en: ['Context', 'Action', 'Result', 'Example'],
     },
     description: {
-      zh: '提供溝通的背景和重要性、明確溝通對象的特徵和需求、列出溝通的具體目標和期望，並定義成功溝通的標準。',
-      en: 'Provide the background and importance of the communication, clarify the characteristics and needs of the audience, list the specific goals and expectations, and define the criteria for successful communication.',
+      zh: 'CARE將情境置於首位，這對於特定情況的請求非常完美。當背景對於理解你的需求至關重要時，它能發揮奇效。',
+      en: 'CARE puts context front and center, which is perfect for situation-specific requests. It works wonders when the background is crucial for understanding what you need.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `Context: 向投資人簡報新產品的市場潛力
-Audience: 有豐富投資經驗但對技術了解有限的天使投資人
-Requirements: 15分鐘簡報，需要展現市場機會和團隊能力
-Expectations: 獲得種子輪投資意向，建立長期合作關係`,
-        en: `Context: Presenting the market potential of a new product to investors
-Audience: Angel investors with extensive investment experience but limited technical knowledge
-Requirements: A 15-minute presentation that showcases the market opportunity and team capabilities
-Expectations: Secure seed round investment interest and establish a long-term partnership`,
+        zh: `情境: 我們公司正在推出一款新的語言學習手機應用程式。我們處於預發布階段，希望招募Beta測試者。
+行動: 草擬一封給潛在Beta測試者的推廣郵件。
+結果: 郵件應具說服力，清楚解釋成為Beta測試者的好處（早期體驗、影響產品開發），概述對他們的期望，並提供明確的註冊行動呼籲。長度約為200-250字。
+範例: 我們希望的語氣片段： 「成為第一批體驗革命性西班牙語學習方式的人！作為LingoLeap的Beta測試者，您將獲得獨家訪問權...」`,
+        en: `Context: Our company is launching a new mobile app for language learning. We are in the pre-launch phase and want to gather beta testers.
+Action: Draft an outreach email to potential beta testers.
+Result: The email should be persuasive, clearly explain the benefits of becoming a beta tester (early access, influence product development), outline what is expected from them, and provide a clear call to action to sign up. It should be approximately 200-250 words.
+Example: Here's a snippet of the tone we're looking for: "Be among the first to experience a revolutionary way to learn Spanish! As a beta tester for LingoLeap, you'll get exclusive access..."`,
       },
     },
   },
@@ -155,26 +155,26 @@ Expectations: Secure seed round investment interest and establish a long-term pa
     name: { zh: 'GUIDE 框架', en: 'GUIDE Framework' },
     category: { zh: '基礎結構框架', en: 'Basic Structure Frameworks' },
     components: {
-      zh: ['Goal (目標)', 'User (用戶)', 'Information (資訊)', 'Delivery (傳遞)', 'Execution (執行)'],
-      en: ['Goal', 'User', 'Information', 'Delivery', 'Execution'],
+      zh: ['Goal (目標)', 'Understanding (理解)', 'Information (資訊)', 'Direction (指導)', 'Evaluation (評估)'],
+      en: ['Goal', 'Understanding', 'Information', 'Direction', 'Evaluation'],
     },
     description: {
-      zh: '設定對話或學習的最終目標、了解參與者的背景和需求、提供必要的背景知識、選擇最適合的溝通方式，並實施與調整溝通策略。',
-      en: 'Set the final goal for the conversation or learning, understand the participants\' backgrounds and needs, provide necessary background knowledge, choose the most suitable communication method, and implement and adjust the communication strategy.',
+      zh: '一個用於系統化、分步研究的框架，引導 AI 逐步拆解任務。',
+      en: 'Use GUIDE when you need a step-by-step research breakdown.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `Goal: 教導新進員工使用公司的CRM系統
-User: 剛畢業的行銷助理，對軟體操作較不熟悉
-Information: CRM功能介紹、常用操作流程、注意事項
-Delivery: 一對一實作教學配合圖文說明手冊
-Execution: 分階段學習，每週檢核學習進度`,
-        en: `Goal: Teach new employees how to use the company's CRM system
-User: A recently graduated marketing assistant, unfamiliar with the software
-Information: CRM feature introduction, common operating procedures, important notes
-Delivery: One-on-one hands-on training combined with a graphic manual
-Execution: Phased learning, with weekly progress checks`,
+        zh: `Goal: 為初學者撰寫一篇關於「被動收入」的部落格文章。
+Understanding: 我知道基本概念，但需要深入的策略和真實案例。
+Information: 文章應包含被動收入的定義、至少五種不同策略（如股息、房地產、線上課程），以及每種策略的優缺點。
+Direction: 請以平易近人且激勵人心的語氣撰寫，並為每個策略提供一個簡短的成功故事。
+Evaluation: 一篇好的文章應該是內容豐富、易於理解，並能激發讀者開始他們的被動收入之旅。`,
+        en: `Goal: Write a blog post about "passive income" for beginners.
+Understanding: I know the basic concept but need in-depth strategies and real-world examples.
+Information: The post should cover the definition of passive income, at least five different strategies (like dividends, real estate, online courses), and the pros and cons of each.
+Direction: Please write in an approachable and motivating tone, and include a short success story for each strategy.
+Evaluation: A good post will be informative, easy to understand, and inspire readers to start their passive income journey.`
       },
     },
   },
@@ -183,24 +183,24 @@ Execution: Phased learning, with weekly progress checks`,
     name: { zh: 'IDEA 框架', en: 'IDEA Framework' },
     category: { zh: '基礎結構框架', en: 'Basic Structure Frameworks' },
     components: {
-      zh: ['Identify (識別)', 'Define (定義)', 'Explore (探索)', 'Action (行動)'],
-      en: ['Identify', 'Define', 'Explore', 'Action'],
+      zh: ['Intent (意圖)', 'Details (細節)', 'Examples (範例)', 'Adjustments (調整)'],
+      en: ['Intent', 'Details', 'Examples', 'Adjustments'],
     },
     description: {
-      zh: '明確指出需要改進或創造的問題、補充相關背景資訊和限制條件、請求多元化的創意解決方案，並選擇最佳方案制定實施計畫。',
-      en: 'Clearly identify the problem needing improvement or creation, add relevant background information and constraints, request diverse creative solutions, and select the best option to create an implementation plan.',
+      zh: '一個用於需要迭代和優化研究的框架，允許根據初步回應進行調整。',
+      en: 'Use IDEA when your research needs iteration and refinement.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `Identify: 員工工作效率低落，會議過多影響專注力
-Define: 50人規模新創公司，每天平均3-4個會議，專案進度延遲
-Explore: 提供減少會議、提升效率的創新管理方法
-Act: 選出最適合的3個解決方案並提供實施時程`,
-        en: `Identify: Low employee productivity, too many meetings affecting focus
-Define: A 50-person startup with an average of 3-4 meetings per day, causing project delays
-Explore: Provide innovative management methods to reduce meetings and increase efficiency
-Act: Select the 3 most suitable solutions and provide an implementation timeline`,
+        zh: `Intent: 我想為我的咖啡店設計一個新的忠誠度計畫。
+Details: 目標是提高客戶回訪率。我目前沒有任何計畫。
+Examples: 我喜歡星巴克的星星獎勵系統，但希望我的計畫更簡單。
+Adjustments: 如果初步想法太複雜，請提出更簡化的替代方案。`,
+        en: `Intent: I want to design a new loyalty program for my coffee shop.
+Details: The goal is to increase customer return rates. I currently have no program in place.
+Examples: I like Starbucks' star reward system, but I want mine to be simpler.
+Adjustments: If the initial ideas are too complex, propose a more streamlined alternative.`
       },
     },
   },
@@ -209,52 +209,48 @@ Act: Select the 3 most suitable solutions and provide an implementation timeline
     name: { zh: 'RISE 框架', en: 'RISE Framework' },
     category: { zh: '基礎結構框架', en: 'Basic Structure Frameworks' },
     components: {
-      zh: ['Request (請求)', 'Input (輸入)', 'Scenario (情境)', 'Expectations (期望)'],
-      en: ['Request', 'Input', 'Scenario', 'Expectations'],
+      zh: ['Role (角色)', 'Input (輸入)', 'Steps (步驟)', 'Expectation (期望)'],
+      en: ['Role', 'Input', 'Steps', 'Expectation'],
     },
     description: {
-      zh: '提出明確請求，提供輸入資料，描述應用情境，並設定期望的輸出標準。',
-      en: 'Make a clear request, provide input data, describe the application scenario, and set the desired output standards.',
+      zh: 'RISE是處理需要特定工作流程的複雜任務時的首選。將過程分解為清晰的步驟對輸出品質有巨大影響。',
+      en: 'RISE is the go-to for complex tasks requiring a specific workflow. Breaking down the process into clear steps makes a huge difference in the quality of the output.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `Request: 為我們的 app 寫一封新功能發布的電子郵件
-Input: 新功能是「深色模式」和「離線存取」
-Scenario: 郵件將發送給所有現有用戶
-Expectations: 語氣興奮且資訊豐富，包含一個明確的行動呼籲`,
-        en: `Request: Write a new feature announcement email for our app
-Input: The new features are "Dark Mode" and "Offline Access"
-Scenario: The email will be sent to all existing users
-Expectations: An excited and informative tone, including a clear call to action`,
+        zh: `角色: 你是一位一絲不苟的校對員和編輯。
+輸入: 以下部落格文章草稿：[在此貼上文章文本]。
+步驟: 1. 首先，檢查並修正所有語法錯誤和拼寫錯誤。 2. 其次，找出並建議改進清晰度和流暢性的地方。 3. 第三，確保語氣與專業但引人入勝的風格一致。 4. 最後，提供所做主要更改的簡要摘要。
+期望: 輸出應為部落格文章的編輯版本，帶有追蹤修訂（如果可能，或清楚標示的修正）以及一份獨立的簡短編輯和建議摘要。主要目標是使文章達到可發布的狀態。`,
+        en: `Role: You are a meticulous proofreader and editor.
+Input: The following blog post draft: [Paste blog post text here].
+Steps: 1. First, check for and correct any grammatical errors and spelling mistakes. 2. Second, identify and suggest improvements for clarity and flow. 3. Third, ensure the tone is consistent with a professional yet engaging style. 4. Finally, provide a brief summary of the key changes made.
+Expectation: The output should be the edited version of the blog post with tracked changes (if possible, or clearly indicated corrections) and a separate short summary of your edits and suggestions. The primary goal is to make the post publication-ready.`,
       },
     },
   },
   {
-    id: 'coast',
-    name: { zh: 'COAST 框架', en: 'COAST Framework' },
+    id: 'rtf',
+    name: { zh: 'RTF 框架', en: 'RTF Framework' },
     category: { zh: '基礎結構框架', en: 'Basic Structure Frameworks' },
     components: {
-      zh: ['Context (情境)', 'Objective (目標)', 'Audience (受眾)', 'Style (風格)', 'Tone (語調)'],
-      en: ['Context', 'Objective', 'Audience', 'Style', 'Tone'],
+      zh: ['Role (角色)', 'Task (任務)', 'Format/Finish (格式/完成)'],
+      en: ['Role', 'Task', 'Format/Finish'],
     },
     description: {
-      zh: '提供背景情境、明確目標、定義受眾，並指定寫作的風格與語調。',
-      en: 'Provide background context, a clear objective, define the audience, and specify the writing style and tone.',
+      zh: 'RTF將角色扮演與結構化輸出要求結合起來。當專業知識和呈現方式同等重要時，這個框架非常適用。',
+      en: 'RTF combines role-playing with structured output requirements. This framework is great when both expertise and presentation matter equally.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `Context: 一位長期客戶投訴了我們的服務
-Objective: 撰寫一封道歉並提供解決方案的安撫郵件
-Audience: 這位感到不滿的客戶
-Style: 專業且有同理心
-Tone: 誠懇、願意解決問題`,
-        en: `Context: A long-term customer has complained about our service
-Objective: Write an apology email that also offers a solution to pacify them
-Audience: The dissatisfied customer
-Style: Professional and empathetic
-Tone: Sincere, willing to solve the problem`,
+        zh: `角色: 你是一位專門從事冒險旅遊的資深旅遊作家。
+任務: 為為期7天的巴塔哥尼亞地區背包旅行創建一個引人入勝的行程，重點是具有挑戰性的徒步旅行和獨特的自然地標。
+格式/完成: 將行程以每日計畫的表格形式呈現，欄位包括「天」、「地點」、「主要活動」和「預計徒步時間/難度」。整體語氣應鼓舞人心且充滿冒險精神。`,
+        en: `Role: You are a seasoned travel writer specializing in adventure tourism.
+Task: Create a compelling itinerary for a 7-day backpacking trip through the Patagonia region, focusing on challenging hikes and unique natural landmarks.
+Format/Finish: Present the itinerary as a day-by-day plan in a table format with columns for 'Day,' 'Location,' 'Key Activities,' and 'Estimated Hiking Time/Difficulty.' The overall tone should be inspiring and adventurous.`,
       },
     },
   },
@@ -263,26 +259,26 @@ Tone: Sincere, willing to solve the problem`,
     name: { zh: 'FOCUS 框架', en: 'FOCUS Framework' },
     category: { zh: '基礎結構框架', en: 'Basic Structure Frameworks' },
     components: {
-      zh: ['Function (功能)', 'Outcome (結果)', 'Context (情境)', 'Usage (使用)', 'Specifications (規格)'],
-      en: ['Function', 'Outcome', 'Context', 'Usage', 'Specifications'],
+      zh: ['Function (功能)', 'Outcome (結果)', 'Criteria (標準)', 'Underlying Assumptions (潛在假設)', 'Strategy (策略)'],
+      en: ['Function', 'Outcome', 'Criteria', 'Underlying Assumptions', 'Strategy'],
     },
     description: {
-      zh: '描述所需功能、期望的產出結果、使用情境、具體用途和技術規格。',
-      en: 'Describe the required function, the desired outcome, the context of use, specific usage, and technical specifications.',
+      zh: '一個用於精準、無冗贅研究的框架，幫助您過濾不必要的細節，直達問題核心。',
+      en: 'Use FOCUS when you want to cut through unnecessary details and get straight to the point.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `Function: 產生一個 Python 函數
-Outcome: 該函數能計算兩個日期之間的天數
-Context: 用於一個專案管理工具
-Usage: 輸入兩個字串格式的日期
-Specifications: 函數名為 'days_between'，能處理 'YYYY-MM-DD' 格式`,
-        en: `Function: Generate a Python function
-Outcome: The function should calculate the number of days between two dates
-Context: For use in a project management tool
-Usage: Takes two dates in string format as input
-Specifications: The function name is 'days_between' and it must handle 'YYYY-MM-DD' format`,
+        zh: `Function: 扮演一位財務分析師的角色。
+Outcome: 提供特斯拉(TSLA)和福特(F)的投資潛力比較。
+Criteria: 分析應基於過去五年的財務報表、市場份額和技術創新。
+Underlying Assumptions: 假設電動車市場將持續增長。
+Strategy: 首先比較兩家公司的核心財務指標，然後分析其在電動車領域的技術優勢和未來展望。`,
+        en: `Function: Act as a financial analyst.
+Outcome: Provide a comparison of the investment potential of Tesla (TSLA) and Ford (F).
+Criteria: The analysis should be based on financial statements from the past five years, market share, and technological innovation.
+Underlying Assumptions: Assume that the electric vehicle market will continue to grow.
+Strategy: Start by comparing the core financial metrics of both companies, then analyze their technological advantages and future outlook in the EV space.`
       },
     },
   },
@@ -313,28 +309,86 @@ Example: "Stay hydrated, love the planet! Our new bottle is made from 100% recyc
     },
   },
   {
-    id: 'clear-principles',
-    name: { zh: 'C.L.E.A.R. 框架', en: 'C.L.E.A.R. Framework' },
+    id: 'clear',
+    name: { zh: 'CLEAR 框架', en: 'CLEAR Framework' },
     category: { zh: '基礎結構框架', en: 'Basic Structure Frameworks' },
     components: {
-      zh: ['Concise (簡潔)', 'Logical (邏輯性)', 'Explicit (明確)', 'Adaptive (適應性)', 'Reflective (反思性)'],
-      en: ['Concise', 'Logical', 'Explicit', 'Adaptive', 'Reflective'],
+      zh: ['Context (情境)', 'Logic (邏輯)', 'Expectations (期望)', 'Action (行動)', 'Restrictions (限制)'],
+      en: ['Context', 'Logic', 'Expectations', 'Action', 'Restrictions'],
     },
     description: {
-      zh: '一個用於製作有效AI提示詞的核心原則清單：簡潔、邏輯、明確、適應性強和可反思。這個框架有助於確保您的指令清晰、結構良好，並可以迭代改進。',
-      en: 'A checklist of core principles for creating effective AI prompts: Concise, Logical, Explicit, Adaptive, and Reflective. This framework helps ensure your instructions are clear, well-structured, and can be iteratively improved.',
+      zh: '一個用於結構化、明確的研究查詢的框架，不留任何模糊空間。',
+      en: 'Use CLEAR when you need a detailed and structured research query that leaves no room for ambiguity.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `情境 (Context): 你是一位使用 Lovable 的專業全端開發者。
-任務 (Task): 使用 Supabase（電子郵件/密碼驗證）在 React 中建立一個安全的登入頁面。
-指南 (Guidelines): UI 應該是極簡風格，並遵循 Tailwind CSS 的慣例。為每個步驟提供清晰的程式碼註解。
-限制 (Constraints): 僅修改 LoginPage 元件；不要變更其他頁面。確保最終輸出是 Lovable 編輯器中一個可運作的頁面。`,
-        en: `Context: You are a professional full-stack developer using Lovable.
-Task: Create a secure login page in React using Supabase (email/password authentication).
-Guidelines: The UI should be minimalist and follow Tailwind CSS conventions. Provide clear code comments for each step.
-Constraints: Only modify the LoginPage component; do not alter other pages. Ensure the final output is a functional page within the Lovable editor.`,
+        zh: `Context: 我正在為一份大學報告研究再生能源的經濟可行性。
+Logic: 我需要比較太陽能和風能的成本效益，以確定哪個是更好的長期投資。
+Expectations: 我需要一個包含數據、圖表和來源引用的詳細摘要。
+Action: 總結太陽能和風能的初始投資成本、運營成本和投資回報率。
+Restrictions: 資訊來源應僅限於過去三年的學術期刊和政府報告。`,
+        en: `Context: I am researching the economic viability of renewable energy for a university paper.
+Logic: I need to compare the cost-effectiveness of solar vs. wind power to determine which is a better long-term investment.
+Expectations: I need a detailed summary with data, charts, and source citations.
+Action: Summarize the initial investment costs, operational costs, and return on investment for both solar and wind energy.
+Restrictions: Sources should be limited to academic journals and government reports from the last three years.`
+      },
+    },
+  },
+  {
+    id: 'smart',
+    name: { zh: 'SMART 框架', en: 'SMART Framework' },
+    category: { zh: '基礎結構框架', en: 'Basic Structure Frameworks' },
+    components: {
+      zh: ['Specific (具體)', 'Measurable (可衡量)', 'Achievable (可實現)', 'Relevant (相關)', 'Time-bound (有時限)'],
+      en: ['Specific', 'Measurable', 'Achievable', 'Relevant', 'Time-bound'],
+    },
+    description: {
+      zh: '一個用於設定精確、目標導向研究的框架，以獲得專注且可衡量的結果。',
+      en: 'Use SMART when you need focused, measurable research results.',
+    },
+    example: {
+      title: { zh: '使用範例：', en: 'Example:' },
+      code: {
+        zh: `Specific: 找出三種能有效降低小型企業碳足跡的策略。
+Measurable: 每種策略應有潛在的碳減排百分比估算。
+Achievable: 這些策略應是預算低於5000美元的小型企業可以實施的。
+Relevant: 專注於能源消耗和廢物管理領域。
+Time-bound: 找出在未來六個月內可以開始實施的策略。`,
+        en: `Specific: Identify three effective strategies for a small business to reduce its carbon footprint.
+Measurable: Each strategy should have a potential percentage reduction in carbon emissions.
+Achievable: The strategies should be implementable by a small business with a budget under $5,000.
+Relevant: Focus on the areas of energy consumption and waste management.
+Time-bound: Find strategies that can be initiated within the next six months.`
+      },
+    },
+  },
+  {
+    id: 'quest',
+    name: { zh: 'QUEST 框架', en: 'QUEST Framework' },
+    category: { zh: '基礎結構框架', en: 'Basic Structure Frameworks' },
+    components: {
+      zh: ['Question (問題)', 'Understanding (理解)', 'Expectation (期望)', 'Scope (範圍)', 'Time (時間)'],
+      en: ['Question', 'Understanding', 'Expectation', 'Scope', 'Time'],
+    },
+    description: {
+      zh: '一個用於將廣泛主題縮小範圍並提煉研究問題的框架。',
+      en: 'Use QUEST when you have a broad topic and need to narrow it down.',
+    },
+    example: {
+      title: { zh: '使用範例：', en: 'Example:' },
+      code: {
+        zh: `Question: 人工智慧將如何影響專案管理？
+Understanding: 我知道AI可以自動化任務，但不確定其對角色和職責的具體影響。
+Expectation: 我希望得到一份要點清單，說明AI將改變專案經理工作的五個主要方式。
+Scope: 專注於軟體開發行業。
+Time: 考慮未來五年的變化。`,
+        en: `Question: How will artificial intelligence impact project management?
+Understanding: I know AI can automate tasks, but I'm unsure of the specific effects on roles and responsibilities.
+Expectation: I want a bullet-point list of the top five ways AI will change a project manager's job.
+Scope: Focus on the software development industry.
+Time: Consider changes over the next five years.`
       },
     },
   },
@@ -449,26 +503,26 @@ Round 3: Add charts and success stories to the responses from the first two roun
     name: { zh: 'RISEN 框架', en: 'RISEN Framework' },
     category: { zh: '進階推理框架', en: 'Advanced Reasoning Frameworks' },
     components: {
-      zh: ['Role (角色)', 'Input (輸入)', 'Steps (步驟)', 'Expectation (期望)', 'Narrowing (範圍縮小)'],
-      en: ['Role', 'Input', 'Steps', 'Expectation', 'Narrowing'],
+      zh: ['Requirement (需求)', 'Information (資訊)', 'Strategy (策略)', 'Evaluation (評估)', 'Negotiation (協商)'],
+      en: ['Requirement', 'Information', 'Strategy', 'Evaluation', 'Negotiation'],
     },
     description: {
-      zh: '設定角色、提供輸入、要求分步執行、定義期望，並逐步縮小範圍以獲得更精確的結果。',
-      en: 'Set a role, provide input, require step-by-step execution, define expectations, and progressively narrow the scope to obtain a more precise result.',
+      zh: '一個用於需要策略性深度研究的框架，允許在回應中具有一定的靈活性。',
+      en: 'Use RISEN when your research requires a strategic approach.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `Role: 旅遊規劃師
-Input: 我有 7 天時間，預算 5 萬台幣，想去日本
-Steps: 請先建議三個城市，然後為我選擇的城市規劃每日行程
-Expectation: 行程包含交通、住宿建議和景點
-Narrowing: 我對歷史古蹟比購物更有興趣`,
-        en: `Role: Travel Planner
-Input: I have 7 days and a budget of 50,000 TWD, and I want to go to Japan
-Steps: First, suggest three cities, then plan a daily itinerary for the city I choose
-Expectation: The itinerary should include transportation, accommodation suggestions, and attractions
-Narrowing: I'm more interested in historical sites than shopping`,
+        zh: `Requirement: 我需要一份關於遠距工作對員工心理健康影響的全面報告。
+Information: 請包含正面和負面的影響，並引用2020年後的學術研究。
+Strategy: 首先概述主要趨勢，然後深入探討具體問題，如孤立感和工作與生活平衡。
+Evaluation: 報告的準確性將根據所引用研究的品質來判斷。
+Negotiation: 如果找不到特定主題的數據，請指出知識差距並建議未來研究方向。`,
+        en: `Requirement: I need a comprehensive report on the impact of remote work on employee mental health.
+Information: Please include both positive and negative impacts, citing academic studies post-2020.
+Strategy: Start with an overview of major trends, then delve into specific issues like isolation and work-life balance.
+Evaluation: The accuracy of the report will be judged by the quality of the cited research.
+Negotiation: If data on a specific sub-topic is unavailable, please highlight the knowledge gap and suggest areas for future research.`
       },
     },
   },
@@ -502,8 +556,92 @@ Final Answer: 5 minutes`,
       },
     },
   },
+  {
+    id: 'rhodes',
+    name: { zh: 'RHODES 框架', en: 'RHODES Framework' },
+    category: { zh: '進階推理框架', en: 'Advanced Reasoning Frameworks' },
+    components: {
+      zh: ['Research (研究)', 'Hypothesis (假設)', 'Objectives (目標)', 'Development (發展)', 'Execution (執行)', 'Synthesis (綜合)'],
+      en: ['Research', 'Hypothesis', 'Objectives', 'Development', 'Execution', 'Synthesis'],
+    },
+    description: {
+      zh: '一個用於假設驅動研究的框架，遵循從問題識別到結論綜合的結構化路徑。',
+      en: 'Use RHODES when your research follows a hypothesis-based approach.',
+    },
+    example: {
+      title: { zh: '使用範例：', en: 'Example:' },
+      code: {
+        zh: `Research: 研究四天工作制對科技公司員工生產力的影響。
+Hypothesis: 實施四天工作制將在不降低產出的情況下提高員工滿意度和生產力。
+Objectives: 衡量生產力指標（如程式碼提交、任務完成率）和員工滿意度調查的變化。
+Development: 規劃一個研究方法，比較實施前後三個月的數據。
+Execution: 分析提供的數據集，找出統計上顯著的差異。
+Synthesis: 總結研究結果，並就四天工作制的可行性提出建議。`,
+        en: `Research: Investigate the impact of a four-day work week on employee productivity in tech companies.
+Hypothesis: Implementing a four-day work week increases employee satisfaction and productivity without decreasing output.
+Objectives: Measure changes in productivity metrics (like code commits, task completion rates) and employee satisfaction surveys.
+Development: Plan a research methodology comparing data from three months before and after implementation.
+Execution: Analyze the provided dataset to identify statistically significant differences.
+Synthesis: Summarize the findings and make a recommendation on the viability of a four-day work week.`
+      },
+    },
+  },
 
   // 商業應用框架 (Business Application Frameworks)
+  {
+    id: 'coast',
+    name: { zh: 'COAST 框架', en: 'COAST Framework' },
+    category: { zh: '商業應用框架', en: 'Business Application Frameworks' },
+    components: {
+      zh: ['Context (情境)', 'Objective (目標)', 'Actions (行動)', 'Scenario (場景)', 'Task (任務)'],
+      en: ['Context', 'Objective', 'Actions', 'Scenario', 'Task'],
+    },
+    description: {
+      zh: 'COAST為複雜的規劃任務提供了全面的結構。對於需要將高層次目標與具體行動聯繫起來的專案非常有價值。',
+      en: 'COAST provides comprehensive structure for complex planning tasks. It is invaluable for projects that need to connect high-level objectives with specific actions.',
+    },
+    example: {
+      title: { zh: '使用範例：', en: 'Example:' },
+      code: {
+        zh: `情境: 我們正在為快速發展的科技公司開發一個新的員工入職計畫。
+目標: 創造一個熱情且資訊豐富的第一週體驗，幫助新員工快速融入並為他們的角色做好準備。
+行動: 規劃一個為期5天的時間表。為每一天建議關鍵活動、資訊會議和介紹性會議。考慮後勤方面、學習目標和社交融入。
+場景: 想像一位新的軟體工程師加入公司。他們的第一週應該是什麼樣子才能為成功奠定基礎？
+任務: 製作一份詳細的第一週入職時間表，以清晰的逐日列表格式呈現。每天的計畫應包括時間、活動描述和相關人員/部門。`,
+        en: `Context: We are developing a new employee onboarding program for our rapidly growing tech company.
+Objective: To create a welcoming and informative first-week experience that helps new hires integrate quickly and feel prepared for their roles.
+Actions: Outline a 5-day schedule. For each day, suggest key activities, information sessions, and introductory meetings. Consider logistical aspects, learning objectives, and social integration.
+Scenario: Imagine a new software engineer joining the company. What should their first week look like to set them up for success?
+Task: Produce a detailed first-week onboarding schedule, presented in a clear, day-by-day list format. Each day's plan should include times, activity descriptions, and involved personnel/departments.`,
+      },
+    },
+  },
+  {
+    id: 'pivo',
+    name: { zh: 'P-I-V-O 框架', en: 'P-I-V-O Framework' },
+    category: { zh: '商業應用框架', en: 'Business Application Frameworks' },
+    components: {
+      zh: ['Problem (問題)', 'Insights (洞察)', 'Voice (聲音)', 'Outcome (結果)'],
+      en: ['Problem', 'Insights', 'Voice', 'Outcome'],
+    },
+    description: {
+      zh: 'P-I-V-O以一種以解決方案為導向的方式來構建問題，這對於獲得策略性建議非常有效。「聲音」部分增加了一個特定的視角，豐富了回應。',
+      en: 'P-I-V-O frames problems in a solution-oriented way that is incredibly effective for getting strategic advice. The “Voice” component adds a specific perspective that enriches the response.',
+    },
+    example: {
+      title: { zh: '使用範例：', en: 'Example:' },
+      code: {
+        zh: `問題: 我們的SaaS新創公司已連續兩季未達到年度經常性收入(ARR)目標。
+洞察: 漏斗分析顯示從演示到試用的轉換率很高，但從試用到付費的留存率很差。
+聲音: 經驗豐富的新創公司教練，曾幫助類似公司克服增長瓶頸。
+結果: 制定一個為期90天的重新定位計畫，其中包含改善留存率的具體策略和修訂後的收入預測。`,
+        en: `Problem: Our SaaS startup has missed ARR targets for two consecutive quarters.
+Insights: Funnel breakdown shows high demo-to-trial conversion but poor trial-to-paid retention.
+Voice: Experienced startup coach who has helped similar companies overcome growth plateaus.
+Outcome: Develop a 90-day repositioning plan with specific tactics to improve retention and a revised revenue forecast.`,
+      },
+    },
+  },
   {
     id: 'step',
     name: { zh: 'STEP 框架', en: 'STEP Framework' },
@@ -781,6 +919,32 @@ Task: After you've finished asking questions and received my answers, based on y
 
   // 創意思考框架 (Creative Thinking Frameworks)
   {
+    id: 'rain',
+    name: { zh: 'R-A-I-N 框架', en: 'R-A-I-N Framework' },
+    category: { zh: '創意思考框架', en: 'Creative Thinking Frameworks' },
+    components: {
+      zh: ['Role (角色)', 'Aim (目標)', 'Input (輸入)', 'Numeric Target (數字目標)'],
+      en: ['Role', 'Aim', 'Input', 'Numeric Target'],
+    },
+    description: {
+      zh: '當你需要有可衡量結果的創意工作時，R-A-I-N是你的首選框架。數字目標使創意基於實際結果。',
+      en: 'R-A-I-N is the framework of choice when you need creative work with measurable outcomes. The numeric target keeps creativity grounded in practical results.',
+    },
+    example: {
+      title: { zh: '使用範例：', en: 'Example:' },
+      code: {
+        zh: `角色: 你是一位資深產品設計師。
+目標: 將用戶引導時間減少30%。
+輸入: 使用附件中顯示當前流失點的漏斗指標。
+數字目標: 交付一個行動裝置線框圖和顯示預期改進的KPI表格。`,
+        en: `Role: You are a senior product designer.
+Aim: Reduce user onboarding time by 30%.
+Input: Use the attached funnel metrics showing current drop-off points.
+Numeric Target: Deliver a mobile wireframe and KPI table showing expected improvements.`,
+      },
+    },
+  },
+  {
     id: 'roses',
     name: { zh: 'ROSES 框架', en: 'ROSES Framework' },
     category: { zh: '創意思考框架', en: 'Creative Thinking Frameworks' },
@@ -813,26 +977,26 @@ Scenario: To be used on storefront signs, flyers, and social media promotions`,
     name: { zh: 'CRISPE 框架', en: 'CRISPE Framework' },
     category: { zh: '創意思考框架', en: 'Creative Thinking Frameworks' },
     components: {
-      zh: ['Capacity and Role (能力與角色)', 'Insight (洞察)', 'Statement (陳述)', 'Personality (個性)', 'Experiment (實驗)'],
-      en: ['Capacity and Role', 'Insight', 'Statement', 'Personality', 'Experiment'],
+      zh: ['Capacity/Role (能力/角色)', 'Insight (洞察)', 'Statement (陳述)', 'Personality (個性)', 'Experiment (實驗)'],
+      en: ['Capacity/Role', 'Insight', 'Statement', 'Personality', 'Experiment'],
     },
     description: {
-      zh: '定義AI的專業身份和能力、提供相關的背景知識和見解、明確任務要求和目標、設定回應的語調和個性特徵，並鼓勵創新思維和多元解決方案。',
-      en: 'Define the AI\'s professional identity and capabilities, provide relevant background knowledge and insights, clarify task requirements and objectives, set the tone and personality characteristics for the response, and encourage innovative thinking and diverse solutions.',
+      zh: 'CRISPE是你的創意遊樂場。「實驗」部分鼓勵AI跳出思維定勢，探索多種可能性。',
+      en: 'CRISPE is your creative playground. The “Experiment” component encourages the AI to think outside the box and explore multiple possibilities.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `Capacity: 經驗豐富的品牌策略師
-Insight: 台灣手搖飲市場競爭激烈，消費者重視健康和創新
-Statement: 為新茶飲品牌設計差異化定位策略
-Personality: 專業但不失親和力，善於用生動比喻說明概念
-Experiment: 提供3種不同的品牌定位方向供選擇`,
-        en: `Capacity: Experienced Brand Strategist
-Insight: The Taiwanese bubble tea market is highly competitive; consumers value health and innovation
-Statement: Design a differentiation and positioning strategy for a new tea beverage brand
-Personality: Professional yet approachable, adept at using vivid analogies to explain concepts
-Experiment: Provide 3 different brand positioning directions to choose from`,
+        zh: `能力/角色: 你是一位創新的行銷策略師。
+洞察: 我們是一家小型手工咖啡店，在平日下午難以增加客流量。我們目前的社群媒體參與度很低。
+陳述: 生成三個獨特且非傳統的行銷活動點子來提升我們的下午銷售額。
+個性: 點子應具創意、預算友好，並帶有略帶俏皮和以社群為中心的語氣。
+實驗: 為每個點子簡要概述核心概念、目標受眾和關鍵訊息。要大膽，跳出框架思考！`,
+        en: `Capacity/Role: You are an innovative marketing strategist.
+Insight: We are a small artisanal coffee shop struggling to increase foot traffic during weekday afternoons. Our current social media engagement is low.
+Statement: Generate three distinct and unconventional marketing campaign ideas to boost our afternoon sales.
+Personality: The ideas should be creative, budget-friendly, and have a slightly playful and community-focused tone.
+Experiment: For each idea, briefly outline the core concept, target audience, and key message. Be bold and think outside the box!`,
       },
     },
   },
@@ -870,8 +1034,64 @@ Reverse: Change the design from opening at the top to opening at the bottom`,
       },
     },
   },
+  {
+    id: 'create',
+    name: { zh: 'CREATE 框架', en: 'CREATE Framework' },
+    category: { zh: '創意思考框架', en: 'Creative Thinking Frameworks' },
+    components: {
+      zh: ['Conceptualize (概念化)', 'Research (研究)', 'Experiment (實驗)', 'Analyze (分析)', 'Transform (轉換)', 'Evaluate (評估)'],
+      en: ['Conceptualize', 'Research', 'Experiment', 'Analyze', 'Transform', 'Evaluate'],
+    },
+    description: {
+      zh: '一個用於引導創新和實驗性研究的框架，從概念化到最終評估。',
+      en: 'Use CREATE when your research involves ideation and experimentation.',
+    },
+    example: {
+      title: { zh: '使用範例：', en: 'Example:' },
+      code: {
+        zh: `Conceptualize: 我想為城市居民創建一個解決食物浪費問題的應用程式。
+Research: 收集關於當前食物浪費統計數據和現有解決方案的資訊。
+Experiment: 腦力激盪三種不同的應用功能，例如社區冰箱地圖、剩食交換平台或與餐廳合作。
+Analyze: 評估每種功能的可行性、潛在影響和開發複雜性。
+Transform: 將最佳功能發展成一個詳細的應用概念和使用者流程。
+Evaluate: 根據潛在的用戶採用率和減少食物浪費的影響來衡量該概念的成功潛力。`,
+        en: `Conceptualize: I want to create an app that solves the problem of food waste for urban dwellers.
+Research: Gather information on current food waste statistics and existing solutions.
+Experiment: Brainstorm three different app features, such as a community fridge map, a surplus food exchange, or a partnership with restaurants.
+Analyze: Evaluate the feasibility, potential impact, and development complexity of each feature.
+Transform: Refine the best feature into a detailed app concept and user flow.
+Evaluate: Measure the potential success of the concept based on potential user adoption and impact on reducing food waste.`
+      },
+    },
+  },
 
   // 教育培訓框架 (Education & Training Frameworks)
+  {
+    id: 'seed',
+    name: { zh: 'S-E-E-D 框架', en: 'S-E-E-D Framework' },
+    category: { zh: '教育培訓框架', en: 'Education & Training Frameworks' },
+    components: {
+      zh: ['Situation (情況)', 'End Goal (最終目標)', 'Examples (範例)', 'Deliverables (交付成果)'],
+      en: ['Situation', 'End Goal', 'Examples', 'Deliverables'],
+    },
+    description: {
+      zh: 'S-E-E-D能優美地建構教育內容。它能創造出既全面又實用的學習材料。',
+      en: 'S-E-E-D structures educational content beautifully. It creates learning materials that are both comprehensive and practical.',
+    },
+    example: {
+      title: { zh: '使用範例：', en: 'Example:' },
+      code: {
+        zh: `情況: 我們的開發團隊需要學習提示工程技能，以便更好地利用AI工具。
+最終目標: 創建一個為期4週的精通課程，使開發人員能夠構建有效的AI提示。
+範例: 包括每週展示漸進技能發展的迷你專案。
+交付成果: 製作完整的教學大綱、評分標準和用於內部推廣的預告內容。`,
+        en: `Situation: Our development team needs to learn prompt engineering skills to better utilize AI tools.
+End Goal: Create a 4-week mastery course that enables developers to build effective AI prompts.
+Examples: Include weekly mini-projects that demonstrate progressive skill development.
+Deliverables: Produce a complete syllabus, assessment rubric, and teaser content for internal promotion.`,
+      },
+    },
+  },
   {
     id: 'blooms-taxonomy',
     name: { zh: "布魯姆分類學 (Bloom's Taxonomy)", en: "Bloom's Taxonomy" },
@@ -965,6 +1185,32 @@ How: Increase training budget and offer flexible benefits`,
 
   // 行銷傳播框架 (Marketing & Communication Frameworks)
   {
+    id: 'flow',
+    name: { zh: 'F-L-O-W 框架', en: 'F-L-O-W Framework' },
+    category: { zh: '行銷傳播框架', en: 'Marketing & Communication Frameworks' },
+    components: {
+      zh: ['Function (功能)', 'Level (級別)', 'Output (輸出)', 'Win Metric (成功指標)'],
+      en: ['Function', 'Level', 'Output', 'Win Metric'],
+    },
+    description: {
+      zh: 'F-L-O-W是內容創作的秘密武器。通過清晰定義受眾的專業水平和成功指標，你能獲得真正能與讀者產生共鳴的內容。',
+      en: 'F-L-O-W is a content creation secret weapon. By clearly defining the audience expertise level and success metrics, you get content that actually resonates with readers.',
+    },
+    example: {
+      title: { zh: '使用範例：', en: 'Example:' },
+      code: {
+        zh: `功能: 專門從事亞洲目的地的旅遊文案撰寫員。
+級別: 首次訪問日本的初學者。
+輸出: 一篇700字的部落格文章，主題為「初次訪客必看的東京社區」。
+成功指標: 目標詞組的關鍵詞密度達到1%，並包含一個引人注目的行動呼籲。`,
+        en: `Function: Travel copywriter specializing in Asian destinations.
+Level: Beginners visiting Japan for the first time.
+Output: 700-word blog post on "Essential Tokyo Neighborhoods for First-Time Visitors."
+Win Metric: 1% keyword density for target phrases and inclusion of a compelling call-to-action.`,
+      },
+    },
+  },
+  {
     id: '4-u',
     name: { zh: '4-U 框架', en: '4-U Framework' },
     category: { zh: '行銷傳播框架', en: 'Marketing & Communication Frameworks' },
@@ -1025,22 +1271,22 @@ Action: Pre-order now for a 30% discount and free in-home installation`,
     name: { zh: 'BAB 框架', en: 'BAB Framework' },
     category: { zh: '行銷傳播框架', en: 'Marketing & Communication Frameworks' },
     components: {
-      zh: ['Before (過去)', 'After (結果)', 'Bridge (橋樑)'],
+      zh: ['Before (之前)', 'After (之後)', 'Bridge (橋樑)'],
       en: ['Before', 'After', 'Bridge'],
     },
     description: {
-      zh: '一個用於說服與故事敘述的框架，通過對比前後狀況來突顯解決方案的價值。',
-      en: 'A framework for persuasion and storytelling that highlights the value of a solution by contrasting the before and after situations.',
+      zh: 'BAB創造了一個引人入勝的敘事弧線，對於有說服力的內容來說是不可抗拒的。它就像講一個有開頭、中間和結尾的迷你故事。',
+      en: 'BAB creates a compelling narrative arc that is irresistible for persuasive content. It’s like telling a mini-story with a beginning, middle, and end.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `Before: 以前加班常常只靠外賣導致營養不均
-After: 使用營養外送，每天輕鬆吃到六大類營養
-Bridge: 只要在我們APP下單，飲食健康一鍵解決`,
-        en: `Before: Working overtime often led to unbalanced nutrition from relying on takeout.
-After: Using our nutritious meal delivery service, I easily get all six major food groups every day.
-Bridge: Just place an order on our app, and healthy eating is one click away.`,
+        zh: `之前: 我們的團隊成員因會議過多而感到不堪重負，導致生產力下降和職業倦怠。他們很難找到專注的時間進行深度工作。
+之後: 我們希望團隊環境中的會議高效且有目的，個人有大量的無干擾時間，從而提高生產力、提升士氣並改善工作與生活的平衡。
+橋樑: 提供一份至少包含五種實用策略的綜合行動計畫，我們的團隊可以實施這些策略來減少不必要的會議並優化我們的會議文化，以達到這種「之後」的狀態。`,
+        en: `Before: Our team members are feeling overwhelmed with too many meetings, leading to decreased productivity and burnout. They struggle to find focused time for deep work.
+After: We want a team environment where meetings are efficient and purposeful, and individuals have significant blocks of uninterrupted time, leading to higher productivity, better morale, and improved work-life balance.
+Bridge: Provide a comprehensive action plan with at least five practical strategies our team can implement to reduce unnecessary meetings and optimize our meeting culture to achieve this 'After' state.`,
       },
     },
   },
@@ -1097,34 +1343,6 @@ Results: We successfully launched the new system within 3 months, saving 60% of 
     },
   },
   {
-    id: 'clear',
-    name: { zh: 'CLEAR 框架', en: 'CLEAR Framework' },
-    category: { zh: '行銷傳播框架', en: 'Marketing & Communication Frameworks' },
-    components: {
-      zh: ['Context (情境)', 'Language (語言)', 'Examples (範例)', 'Adaptable (適應性)', 'Results (結果)'],
-      en: ['Context', 'Language', 'Examples', 'Adaptable', 'Results'],
-    },
-    description: {
-      zh: '描述溝通的背景和環境、指定使用的語言風格和專業程度、提供參考案例或期望格式、要求能適應不同受眾的表達方式，並定義預期的溝通效果和行動。',
-      en: 'Describe the context and environment of the communication, specify the language style and level of professionalism to be used, provide reference cases or desired formats, require adaptability in expression for different audiences, and define the expected communication effects and actions.',
-    },
-    example: {
-      title: { zh: '使用範例：', en: 'Example:' },
-      code: {
-        zh: `Context: 向董事會報告數位轉型計畫的進度
-Language: 正式商業用語，避免過多技術術語
-Examples: 參考McKinsey報告的簡報風格
-Adaptable: 能針對財務和技術背景董事調整說明深度
-Results: 獲得額外預算批准和人力資源支持`,
-        en: `Context: Reporting the progress of the digital transformation plan to the board of directors
-Language: Formal business language, avoiding excessive technical jargon
-Examples: Refer to the presentation style of McKinsey reports
-Adaptable: Able to adjust the depth of explanation for directors with financial and technical backgrounds
-Results: Secure approval for additional budget and human resources support`,
-      },
-    },
-  },
-  {
     id: 'era',
     name: { zh: 'ERA 框架', en: 'ERA Framework' },
     category: { zh: '行銷傳播框架', en: 'Marketing & Communication Frameworks' },
@@ -1151,30 +1369,56 @@ Audience: The general public, who are unfamiliar with this topic.`,
 
   // 專業技術框架 (Professional & Technical Frameworks)
   {
-    id: 'trace',
-    name: { zh: 'TRACE 框架', en: 'TRACE Framework' },
+    id: 'deep',
+    name: { zh: 'D.E.E.P. 框架', en: 'D.E.E.P. Framework' },
     category: { zh: '專業技術框架', en: 'Professional & Technical Frameworks' },
     components: {
-      zh: ['Task (任務)', 'Requirements (要求)', 'Audience (受眾)', 'Context (情境)', 'Evaluation (評估)'],
-      en: ['Task', 'Requirements', 'Audience', 'Context', 'Evaluation'],
+      zh: ['Direction (方向)', 'Existing Info (現有資訊)', 'Expertise (專業知識)', 'Preferred Tone (偏好語氣)'],
+      en: ['Direction', 'Existing Info', 'Expertise', 'Preferred Tone'],
     },
     description: {
-      zh: '明確定義技術問題或開發需求、列出技術規格和限制條件、指定使用者類型和技術背景、提供系統環境和應用場景，並設定成功標準和測試方法。',
-      en: 'Clearly define the technical problem or development requirement, list technical specifications and constraints, specify user types and technical backgrounds, provide the system environment and application scenario, and set success criteria and testing methods.',
+      zh: 'D.E.E.P.是處理複雜內容的首選。它能創造出專家級的材料，不僅提供資訊，更能以其深度和洞察力給讀者留下深刻印象。',
+      en: 'D.E.E.P. is the go-to for sophisticated content. It creates expert-level material that doesn’t just inform but actually impresses readers with its depth and insight.',
     },
     example: {
       title: { zh: '使用範例：', en: 'Example:' },
       code: {
-        zh: `Task: 設計電商網站的購物車功能
-Requirements: 支援多商品、優惠券計算、庫存檢查
-Audience: 一般消費者，需要直覺易用的介面
-Context: RWD響應式設計，整合現有會員系統
-Evaluation: 購買轉換率提升20%，載入時間低於2秒`,
-        en: `Task: Design the shopping cart feature for an e-commerce website
-Requirements: Support multiple items, coupon calculation, inventory check
-Audience: General consumers who need an intuitive and easy-to-use interface
-Context: RWD responsive design, integrate with the existing member system
-Evaluation: Increase purchase conversion rate by 20%, loading time under 2 seconds`,
+        zh: `方向: 為科技專業人士撰寫一篇關於個人品牌的詳細文章。
+現有資訊: 我已附上一份涵蓋關鍵主題的大綱。
+專業知識: 專注於為已有穩定職業生涯並希望轉型為思想領袖的專業人士提供高級技巧。
+偏好語氣: 友好且略帶幽默，同時保持專業信譽。`,
+        en: `Direction: Write a detailed post on personal branding for tech professionals.
+Existing Info: I've attached an outline covering key topics to include.
+Expertise: Focus on advanced tips for professionals with established careers looking to pivot to thought leadership.
+Preferred Tone: Friendly and slightly humorous while maintaining professional credibility.`,
+      },
+    },
+  },
+  {
+    id: 'trace',
+    name: { zh: 'TRACE 框架', en: 'TRACE Framework' },
+    category: { zh: '專業技術框架', en: 'Professional & Technical Frameworks' },
+    components: {
+      zh: ['Task (任務)', 'Request (請求)', 'Action (行動)', 'Context (情境)', 'Example (範例)'],
+      en: ['Task', 'Request', 'Action', 'Context', 'Example'],
+    },
+    description: {
+      zh: '當你腦中有清晰的畫面但難以解釋時，TRACE是你的秘密武器。範例部分就像給AI看一張你想要的東西的圖片，而不僅僅是描述它。',
+      en: 'TRACE is a secret weapon when you have a clear vision but struggle to explain it. The example component is like showing the AI a picture of what you want instead of just describing it.',
+    },
+    example: {
+      title: { zh: '使用範例：', en: 'Example:' },
+      code: {
+        zh: `任務: 為一系列新的環保水瓶生成創意產品描述。
+請求: 我需要三個不同的產品描述。
+行動: 為每個描述，突顯其獨特的銷售主張（例如，材料、設計、保溫性能），營造可持續發展的感覺，並包括一個行動呼籲。
+情境: 目標受眾是具有環保意識的千禧一代。品牌聲音年輕、樂觀，略帶古靈精怪。
+範例: 想要的描述風格：「用AquaPure水瓶可持續地飲水！由回收的海洋塑膠製成，其雙層壁保溫可讓您的飲料保持冰涼24小時。保持水分，拯救地球！立即購買。」`,
+        en: `Task: Generate creative product descriptions for a new line of eco-friendly water bottles.
+Request: I need three distinct product descriptions.
+Action: For each description, highlight its unique selling proposition (e.g., material, design, insulation properties), evoke a sense of sustainability, and include a call to action.
+Context: The target audience is environmentally conscious millennials. The brand voice is youthful, optimistic, and slightly quirky.
+Example: Desired style for a description: "Sip sustainably with the AquaPure bottle! Made from recycled ocean plastic, its double-walled insulation keeps your drinks icy for 24 hours. Stay hydrated and save the planet! Shop now."`,
       },
     },
   },

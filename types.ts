@@ -24,3 +24,8 @@ export interface Framework {
 export type GroupedFrameworks = {
   [category: string]: Framework[];
 };
+
+export interface DecisionGuideItem {
+  useCase: LocalizedText;
+  frameworkIds: string[];
+}

@@ -15,6 +15,7 @@ interface SidebarProps {
   favorites: string[];
   favoriteFrameworks: Framework[];
   onGoHome: () => void;
+  onGoToGuide: () => void;
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (text: LocalizedText) => string;
@@ -30,6 +31,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   favorites,
   favoriteFrameworks,
   onGoHome,
+  onGoToGuide,
   language,
   setLanguage,
   t,
@@ -50,14 +52,25 @@ const Sidebar: React.FC<SidebarProps> = ({
   
   const uiText = {
     favorites: { zh: '我的最愛', en: 'Favorites' },
-    noResults: { zh: '找不到框架。請嘗試不同的搜尋詞。', en: 'No frameworks found. Try a different search term.' }
+    noResults: { zh: '找不到框架。請嘗試不同的搜尋詞。', en: 'No frameworks found. Try a different search term.' },
+    decisionGuide: { zh: '框架選擇指南', en: 'Framework Guide' }
   }
 
   return (
     <aside className="fixed top-0 left-0 h-screen w-96 bg-slate-800 flex flex-col shadow-lg">
       <Header onGoHome={onGoHome} language={language} setLanguage={setLanguage} />
-      <div className="p-4">
+      <div className="p-4 space-y-4">
         <SearchBar value={searchTerm} onChange={onSearchChange} language={language} />
+        <button
+          onClick={onGoToGuide}
+          className="w-full bg-slate-700 hover:bg-slate-600 text-slate-200 font-medium py-2.5 px-4 rounded-lg transition-colors flex items-center justify-center gap-2.5 text-sm"
+          aria-label={uiText.decisionGuide[language]}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+          </svg>
+          <span>{uiText.decisionGuide[language]}</span>
+        </button>
       </div>
       <nav className="flex-1 overflow-y-auto px-4 pb-4">
         {favoriteFrameworks.length > 0 && (

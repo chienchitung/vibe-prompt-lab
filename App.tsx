@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar';
 import FrameworkDetail from './components/FrameworkDetail';
 import Welcome from './components/Welcome';
 import Tutorial from './components/Tutorial';
+import GuidePage from './components/GuidePage';
 
 export type Language = 'zh' | 'en';
 
@@ -13,6 +14,7 @@ const App: React.FC = () => {
   const [selectedFramework, setSelectedFramework] = useState<Framework | null>(null);
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [isTutorialVisible, setIsTutorialVisible] = useState(false);
+  const [mainView, setMainView] = useState<'welcome' | 'guide'>('welcome');
   const [language, setLanguage] = useState<Language>(() => {
     return (localStorage.getItem('vibe-prompt-lab-language') as Language) || 'zh';
   });
@@ -51,6 +53,13 @@ const App: React.FC = () => {
 
   const handleGoHome = () => {
     setSelectedFramework(null);
+    setMainView('welcome');
+    setSearchTerm('');
+  };
+
+  const handleGoToGuide = () => {
+    setSelectedFramework(null);
+    setMainView('guide');
     setSearchTerm('');
   };
 
@@ -147,6 +156,7 @@ const App: React.FC = () => {
         favorites={favorites}
         favoriteFrameworks={favoriteFrameworks}
         onGoHome={handleGoHome}
+        onGoToGuide={handleGoToGuide}
         language={language}
         setLanguage={setLanguage}
         t={t}
@@ -160,6 +170,12 @@ const App: React.FC = () => {
             onToggleFavorite={handleToggleFavorite}
             t={t}
             ta={ta}
+          />
+        ) : mainView === 'guide' ? (
+          <GuidePage 
+            onSelectFramework={setSelectedFramework}
+            language={language}
+            t={t}
           />
         ) : (
           <Welcome onSelectFramework={setSelectedFramework} onStartTutorial={handleTutorialStart} language={language} t={t} />
